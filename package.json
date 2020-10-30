@@ -1,0 +1,24 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --progress --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ivantbv/restaurant-page.git"
+  },
+  "author": "Ivan Georgiev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivantbv/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/ivantbv/restaurant-page#readme",
+  "devDependencies": {
+    "webpack": "^5.3.2",
+    "webpack-cli": "^4.1.0"
+  }
+}
