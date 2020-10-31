@@ -1,0 +1,28 @@
+@import '/node_modules/jtabs/lib/jtabs.css';
+body {
+    display: grid;
+    justify-content: center;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/main-page.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* background-size:auto 100%; */
+}
+
+h1, h3, p {
+    color: white;
+}
+
+#content {
+    text-align: center;
+}
+
+.navbar {
+    width: 600px;
+    height: 50px;
+    background-color: rgba(192, 184, 167, 0.699);
+}
+
+.tab-js { display: none; }
+.tab-active-js { display: block; }
