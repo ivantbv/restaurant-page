@@ -5,22 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Title</title>
     <link rel="stylesheet" href="/dist/styles.css">
+    <link rel="stylesheet" href="/node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+
+    <!-- Optional Theme Stylesheet -->
+    <link rel="stylesheet" href="/node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
 </head>
 <body>
     <div id="content">
  </div> <br>
 
  <div class="navbar">
-<h3>Home</h3>
-<h3>Menu</h3>
-<h3>Contacts</h3>
+<h3 id="homeTab">Home</h3>
+<h3 id="menuTab">Menu</h3>
+<h3 id="contactsTab">Contacts</h3>
  </div>
 
- <div class="tabs-content">
 
+ <!-- <div class="tabs-content" > -->
+    <div class="images removed glide tabs-content">
 
- </div>
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
+          </div>
 
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide" ><img src="/images/pumpkin.jpg" alt=""></li>
+            <li class="glide__slide"> <img src="/images/tortilla.jpg" alt=""></li>
+            <li class="glide__slide"><img src="/images/pasta.jpg" alt=""></li>
+          </ul>
+        </div>    
+
+  
+    </div>      
+
+<!-- </div> -->
     <script src="main.js"></script>
-   </body>
+</body>
 </html>
