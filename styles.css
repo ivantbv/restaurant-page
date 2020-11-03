@@ -11,7 +11,7 @@ body {
     background-size: cover;
 }
 
-h1, h3, p {
+h1, h3, p, h4 {
     color: white;
 }
 
@@ -19,7 +19,7 @@ h1, h3, p {
     text-align: center;
 }
 
-.navbar {
+.navbar, .sub-navbar {
     display: flex;
     justify-content: space-around;
     justify-content: center;
@@ -35,7 +35,7 @@ h3 {
     align-items: center;
 }
 
-.navbar h3 {
+.navbar h3, .sub-navbar h4 {
     width: 33.33%;
     
     height: 100%;
@@ -43,12 +43,12 @@ h3 {
     align-items: center;
 }
 
-.navbar h3:hover {
+.navbar h3:hover, .sub-navbar h4:hover {
     background-color: rgba(100, 92, 92, 0.747);
   }
 
 @media screen and (max-width: 600px) { 
-    .navbar {
+    .navbar, .sub-navbar {
         float: none;
         display: flex;
         flex-direction: column;
@@ -61,7 +61,7 @@ h3 {
         /* align-items: center; */
     }
 
-    .navbar h3 {
+    .navbar h3, .sub-navbar h4 {
         /* display: grid; */
         width: 100%;
         text-align: center;
@@ -103,19 +103,22 @@ h3 {
    padding-bottom: 20px;
 }
 
-@media screen and (max-width: 600px) { 
+/* @media screen and (max-width: 600px) { 
     .images {
      width: 519px; 
      height: 400px;
   
     }
-} 
+}  */
 
 .displayed {
     color: white;
 }
 
-
-.menuDish {
+.pumpkin, .tortilla, .pasta {
     color: white;
+}
+
+.removed {
+    display: none;
 }
