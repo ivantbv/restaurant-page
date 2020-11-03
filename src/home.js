@@ -1,3 +1,5 @@
 function home() {
     
 }
+
+export { home }

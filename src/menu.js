@@ -1,3 +1,4 @@
+import glide from '@glidejs/glide';
 import Glide from '@glidejs/glide'
 new Glide('.images', {
     type: 'carousel',
@@ -6,17 +7,80 @@ new Glide('.images', {
     focusAt: 'center',
     gap: 40,
 }).mount()
+import { tabsContent } from './index'
 
-const tabsContent = document.querySelector('.tabs-content')
-const menuDiv = document.createElement('div');
-const menuPic = document.createElement('div');
-const menuDish = document.createElement('p')
+let dessertsBool = false;
+let mainDishBool = false;
+let drinksBool = false;
 
-menuDish.classList.toggle('menuDish');
-menuDiv.classList.toggle('displayed');
-menuPic.classList.toggle('menu-pic');
 
-function menu(dish, ingredients) {
+const subMenuDiv = document.createElement('div');
+const menuDiv = document.querySelector('.toAppendTo')
+const desserts = document.createElement('h4');
+const mainDishes = document.createElement('h4');
+const drinks = document.createElement('h4');
+desserts.textContent = 'Desserts';
+mainDishes.textContent = 'Main Dishes';
+drinks.textContent = 'Drinks';
+
+const firstImage = document.createElement('img');
+const secondImage = document.createElement('img');
+const thirdImage = document.createElement('img');
+
+// firstImage.classList.add('first');
+// secondImage.classList.add('second');
+// thirdImage.classList.add('third')
+
+// const firstLi = document.querySelector('.pumpkin')
+// const secondLi = document.querySelector('.tortilla')
+// const thirdLi = document.querySelector('.pasta')
+
+const glideSlides = document.getElementsByClassName('glide__slide');
+const lastSlide = glideSlides[glideSlides.length-1];
+
+console.log(glideSlides);
+
+subMenuDiv.classList.add('sub-navbar');
+glideSlides[3].appendChild(thirdImage);
+ glideSlides[2].appendChild(secondImage);
+ glideSlides[1].appendChild(firstImage);
+
+function showDesserts() {
+    dessertsBool = true;
+    mainDishBool = false;
+    thirdImage.src = '/images/pancakes.jpg';
+    secondImage.src = '/images/cake.jpg';
+    firstImage.src = '/images/fruit-salad.jpg';
+}
+
+function showMainDishes() {
+    mainDishBool = true
+    dessertsBool = false;
+    firstImage.src = '/images/pumpkin.jpg'
+    secondImage.src = '/images/tortilla.jpg';
+    thirdImage.src = '/images/pasta.jpg';
+
+}
+
+function showDrinks() {
+    firstImage.src = '/images/tea.jpg'
+    secondImage.src = '/images/hot-chocolate.jpg';
+    thirdImage.src = '/images/coffee.jpg';
+
+}
+
+function menu() {
+
+// thirdPic.src = '/images/pancakes.jpg';
+// secondPic.src = '/images/cake.jpg';
+// firstPic.src = '/images/fruit-salad.jpg';
+
+subMenuDiv.appendChild(mainDishes);
+subMenuDiv.appendChild(desserts);
+subMenuDiv.appendChild(drinks);
+
+menuDiv.appendChild(subMenuDiv);
+
     //menu tab when clicked will have 2 more tabs in itself:
     //menu with dishes
     //menu with drinks
@@ -31,9 +95,10 @@ function menu(dish, ingredients) {
     // tabsContent.appendChild(menuDish);
 }
 
-
-
 export { menu }
+export { subMenuDiv }
+export { showDesserts, showMainDishes, showDrinks }
+export {desserts, mainDishes, drinks}
 //Put the contents of each ‘tab’ inside of it’s own module. 
 //Each module will export a function that creates a div element, adds 
 //the appropriate content and styles to that element and then appends it
