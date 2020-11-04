@@ -1,4 +1,4 @@
-import glide from '@glidejs/glide';
+// import glide from '@glidejs/glide';
 import Glide from '@glidejs/glide'
 new Glide('.images', {
     type: 'carousel',
@@ -7,7 +7,6 @@ new Glide('.images', {
     focusAt: 'center',
     gap: 10,
 }).mount()
-import { tabsContent } from './index'
 
 // let dessertsBool = false;
 // let mainDishBool = false;

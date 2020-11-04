@@ -76,11 +76,21 @@ h3 {
     padding-bottom: 20px;
    /* display: grid; */
    text-align: center;
-   justify-content: center;
+   justify-content: space-evenly;
    border: rgba(0, 109, 128, 0.856) solid 2px;
    background: rgba(182, 180, 176, 0.801);
-   align-items: center;
-   align-content: center;
+   /* align-items: stretch; */
+   /* align-content: center; */
+}
+
+.contacts > div {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.contacts:last-child {
+    margin-top: 20px;
+    font-size: 40px;
 }
 
 .divHome {
