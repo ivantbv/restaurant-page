@@ -24,7 +24,6 @@ h1, h3, p, h4 {
     justify-content: space-around;
     justify-content: center;
     align-items: center;
-    /* width: inherit; */
     height: 56px;
     background-color: rgba(192, 184, 167, 0.699);
 }
@@ -33,6 +32,10 @@ h3 {
     display: grid;
     text-align: center;
     align-items: center;
+}
+
+.sub-navbar h4 {
+align-self: end;
 }
 
 .navbar h3, .sub-navbar h4 {
@@ -44,7 +47,13 @@ h3 {
 }
 
 .navbar h3:hover, .sub-navbar h4:hover {
-    background-color: rgba(100, 92, 92, 0.747);
+    cursor: pointer;
+    /* background-color: rgba(226, 226, 226, 0.466);  */
+  }
+
+  .colorKeep {
+    /* background-color: rgba(100, 92, 92, 0.863);  */
+    background-color: rgba(167, 166, 165, 0.801);
   }
 
 @media screen and (max-width: 600px) { 
@@ -72,12 +81,12 @@ h3 {
 }
 
 .contacts {
-    height: 500px;
     padding-bottom: 20px;
    /* display: grid; */
    text-align: center;
    justify-content: space-evenly;
    border: rgba(0, 109, 128, 0.856) solid 2px;
+   border-top: none;
    background: rgba(182, 180, 176, 0.801);
    /* align-items: stretch; */
    /* align-content: center; */
@@ -86,11 +95,17 @@ h3 {
 .contacts > div {
     font-size: 25px;
     font-weight: bold;
+    color: white;
 }
 
-.contacts:last-child {
+/* .contacts:last-child {
     margin-top: 20px;
     font-size: 40px;
+} */
+
+.contacts p {
+    padding-top: 10px;
+    margin-top: 0px;
 }
 
 .divHome {
@@ -99,7 +114,8 @@ h3 {
    /* display: grid; */
    text-align: center;
    justify-content: center;
-   border: rgba(0, 109, 128, 0.856) solid 2px;
+   border: rgba(0, 109, 128, 0.795) solid 2px;
+   border-top: none;
    background: rgba(182, 180, 176, 0.801);
    align-items: center;
    align-content: center;
@@ -111,6 +127,7 @@ h3 {
     /* filter: blur(1px); */
     height: 270px;
     width: auto;
+    padding-bottom: 20px;
 }
 
 .divHome h5 {
@@ -156,3 +173,10 @@ h3 {
 .removed {
     display: none;
 }
+
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
