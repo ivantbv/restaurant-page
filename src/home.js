@@ -7,7 +7,7 @@ const description = document.createElement('p');
 const description2 = document.createElement('p');
 welcomeMsg.textContent = 'Welcome to Valhalla\'s where food dreams come true'
 description.textContent = 'Check out our menu and choose from the variety of dishes, desserts and drinks' 
-description2.textContent = 'Make a reservation or contact us from the contact tab'
+description2.textContent = 'Make a reservation or contact us from the contacts tab'
 
 function home() {
     homeTabContent.appendChild(vikingDrinking);

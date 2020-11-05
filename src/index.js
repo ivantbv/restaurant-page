@@ -16,6 +16,7 @@ window.addEventListener('load', () => {
     tabsContent.classList.add('removed');
     subMenuDiv.classList.add('removed');
     contactsTabContent.classList.add('removed');
+    homeTab.classList.add('colorKeep');
     home();
 })
 
@@ -25,6 +26,10 @@ homeTab.addEventListener('click', () => {
     tabsContent.classList.add('removed');
     contactsTabContent.classList.add('removed');
     homeTabContent.classList.remove('removed')
+
+    homeTab.classList.add('colorKeep');
+    menuTab.classList.remove('colorKeep');
+    contactsTab.classList.remove('colorKeep');
 })
 
 contactsTab.addEventListener('click', () => {
@@ -33,6 +38,12 @@ contactsTab.addEventListener('click', () => {
     subMenuDiv.classList.add('removed');
     homeTabContent.classList.add('removed');
     contactsTabContent.classList.remove('removed');
+    
+    homeTab.classList.remove('colorKeep')
+    contactsTab.classList.add('colorKeep');
+    menuTab.classList.remove('colorKeep');
+    // menuTab.style.backgroundColor = 'none';
+    // contactsTab.style.backgroundColor = 'rgba(100, 92, 92, 0.747)'
 })
 
 menuTab.addEventListener('click', () => {
@@ -42,6 +53,12 @@ menuTab.addEventListener('click', () => {
     subMenuDiv.classList.remove('removed');
     homeTabContent.classList.add('removed');
     contactsTabContent.classList.add('removed');
+
+    contactsTab.classList.remove('colorKeep');
+    homeTab.classList.remove('colorKeep')
+    menuTab.classList.add('colorKeep');
+    // menuTab.style.backgroundColor = 'rgba(100, 92, 92, 0.747)';
+    // contactsTab.style.backgroundColor = 'none'
 })
 
 desserts.addEventListener('click', showDesserts)
