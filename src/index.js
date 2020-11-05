@@ -11,6 +11,9 @@ const contactsTab = document.querySelector('#contactsTab');
 const tabsContent = document.querySelector('.images');
 const homeTabContent = document.querySelector('.divHome');
 const contactsTabContent = document.querySelector('.contacts');
+let dessertsBool = false;
+let mainDishBool = false;
+let drinksBool = false;
 
 window.addEventListener('load', () => {
     tabsContent.classList.add('removed');
@@ -54,7 +57,21 @@ contactsTab.addEventListener('click', () => {
 
 menuTab.addEventListener('click', () => {
     menu();
-    showMainDishes();
+
+    if (mainDishBool == false && dessertsBool == false && drinksBool == false) {
+        mainDishes.classList.add('colorKeep');
+        showMainDishes();
+    }
+
+    if (mainDishBool == true) {
+         mainDishes.classList.add('colorKeep')
+        // menuTab.style.pointerEvents = 'none';
+    } else if (dessertsBool == true) {
+        desserts.classList.add('colorKeep')
+    } else if (drinksBool == true) {
+        drinks.classList.add('colorKeep')
+    }
+
     tabsContent.classList.remove('removed');
     subMenuDiv.classList.remove('removed');
     homeTabContent.classList.add('removed');
@@ -63,25 +80,32 @@ menuTab.addEventListener('click', () => {
     contactsTab.classList.remove('colorKeep');
     homeTab.classList.remove('colorKeep')
     menuTab.classList.add('colorKeep');
-
-    mainDishes.classList.add('colorKeep')
-    // menuTab.style.backgroundColor = 'rgba(100, 92, 92, 0.747)';
-    // contactsTab.style.backgroundColor = 'none'
+    //mainDishes.classList.add('colorKeep')
+    
 })
 
 desserts.addEventListener('click', () => {
+    dessertsBool = true;
+    mainDishBool = false;
+    drinksBool = false;
     showDesserts()
     desserts.classList.add('colorKeep')
     mainDishes.classList.remove('colorKeep');
     drinks.classList.remove('colorKeep');
 })
 mainDishes.addEventListener('click', () => {
+    dessertsBool = false;
+    mainDishBool = true;
+    drinksBool = false;
     showMainDishes()
     desserts.classList.remove('colorKeep')
     mainDishes.classList.add('colorKeep');
     drinks.classList.remove('colorKeep');
 })
 drinks.addEventListener('click', () => {
+    dessertsBool = false;
+    mainDishBool = false;
+    drinksBool = true;
     showDrinks()
     desserts.classList.remove('colorKeep')
     mainDishes.classList.remove('colorKeep');
