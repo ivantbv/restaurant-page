@@ -34,9 +34,11 @@ h3 {
     align-items: center;
 }
 
-.sub-navbar h4 {
+/* .sub-navbar h4 {
 align-self: end;
-}
+justify-self: center;
+margin-top: 0;
+} */
 
 .navbar h3, .sub-navbar h4 {
     width: 33.33%;
@@ -44,6 +46,13 @@ align-self: end;
     height: 100%;
     text-align: center;
     align-items: center;
+}
+
+.navbar h3 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-top: 0;
 }
 
 .navbar h3:hover, .sub-navbar h4:hover {
@@ -71,7 +80,6 @@ align-self: end;
     }
 
     .navbar h3, .sub-navbar h4 {
-        /* display: grid; */
         width: 100%;
         text-align: center;
         margin: 0;
@@ -88,8 +96,6 @@ align-self: end;
    border: rgba(0, 109, 128, 0.856) solid 2px;
    border-top: none;
    background: rgba(182, 180, 176, 0.801);
-   /* align-items: stretch; */
-   /* align-content: center; */
 }
 
 .contacts > div {
@@ -180,3 +186,8 @@ align-self: end;
     width: 100%;
     /* The width is the width of the web page */
   }
+
+  h4 {
+    display: flex;
+    justify-content: center;
+}
