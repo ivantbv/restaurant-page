@@ -30,6 +30,10 @@ homeTab.addEventListener('click', () => {
     homeTab.classList.add('colorKeep');
     menuTab.classList.remove('colorKeep');
     contactsTab.classList.remove('colorKeep');
+
+    desserts.classList.remove('colorKeep')
+    mainDishes.classList.remove('colorKeep');
+    drinks.classList.remove('colorKeep');
 })
 
 contactsTab.addEventListener('click', () => {
@@ -42,8 +46,10 @@ contactsTab.addEventListener('click', () => {
     homeTab.classList.remove('colorKeep')
     contactsTab.classList.add('colorKeep');
     menuTab.classList.remove('colorKeep');
-    // menuTab.style.backgroundColor = 'none';
-    // contactsTab.style.backgroundColor = 'rgba(100, 92, 92, 0.747)'
+
+    desserts.classList.remove('colorKeep')
+    mainDishes.classList.remove('colorKeep');
+    drinks.classList.remove('colorKeep');
 })
 
 menuTab.addEventListener('click', () => {
@@ -57,12 +63,29 @@ menuTab.addEventListener('click', () => {
     contactsTab.classList.remove('colorKeep');
     homeTab.classList.remove('colorKeep')
     menuTab.classList.add('colorKeep');
+
+    mainDishes.classList.add('colorKeep')
     // menuTab.style.backgroundColor = 'rgba(100, 92, 92, 0.747)';
     // contactsTab.style.backgroundColor = 'none'
 })
 
-desserts.addEventListener('click', showDesserts)
-mainDishes.addEventListener('click', showMainDishes)
-drinks.addEventListener('click', showDrinks)
+desserts.addEventListener('click', () => {
+    showDesserts()
+    desserts.classList.add('colorKeep')
+    mainDishes.classList.remove('colorKeep');
+    drinks.classList.remove('colorKeep');
+})
+mainDishes.addEventListener('click', () => {
+    showMainDishes()
+    desserts.classList.remove('colorKeep')
+    mainDishes.classList.add('colorKeep');
+    drinks.classList.remove('colorKeep');
+})
+drinks.addEventListener('click', () => {
+    showDrinks()
+    desserts.classList.remove('colorKeep')
+    mainDishes.classList.remove('colorKeep');
+    drinks.classList.add('colorKeep');
+})
 
 export { tabsContent, homeTabContent, contactsTabContent };
