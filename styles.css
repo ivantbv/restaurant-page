@@ -4,7 +4,6 @@ body {
     margin: 0;
     justify-content: center;
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/italian-cuisine.jpg") no-repeat center center fixed;
-    /* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/cook.jpg") no-repeat center center fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -34,12 +33,6 @@ h3 {
     align-items: center;
 }
 
-/* .sub-navbar h4 {
-align-self: end;
-justify-self: center;
-margin-top: 0;
-} */
-
 .navbar h3, .sub-navbar h4 {
     width: 33.33%;
     
@@ -57,11 +50,9 @@ margin-top: 0;
 
 .navbar h3:hover, .sub-navbar h4:hover {
     cursor: pointer;
-    /* background-color: rgba(226, 226, 226, 0.466);  */
   }
 
   .colorKeep {
-    /* background-color: rgba(100, 92, 92, 0.863);  */
     background-color: rgba(167, 166, 165, 0.801);
   }
 
@@ -90,7 +81,6 @@ margin-top: 0;
 
 .contacts {
     padding-bottom: 20px;
-   /* display: grid; */
    text-align: center;
    justify-content: space-evenly;
    border: rgba(0, 109, 128, 0.856) solid 2px;
@@ -117,7 +107,6 @@ margin-top: 0;
 .divHome {
     /* height: 505px;  */
    padding-bottom: 20px;
-   /* display: grid; */
    text-align: center;
    justify-content: center;
    border: rgba(0, 109, 128, 0.795) solid 2px;
@@ -125,12 +114,9 @@ margin-top: 0;
    background: rgba(182, 180, 176, 0.801);
    align-items: center;
    align-content: center;
-   /* filter: blur(10px);
-  -webkit-filter: blur(10px); */
 }
 
 .divHome > img {
-    /* filter: blur(1px); */
     height: 270px;
     width: auto;
     padding-bottom: 20px;
@@ -149,8 +135,10 @@ margin-top: 0;
     text-align: center;
     justify-content: center;
     border: rgba(0, 109, 128, 0.856) solid 2px;
+    border-top: none;
     /* height: 550px; */
-    background: currentColor;
+    background: currentColor; 
+
 }
 
 .images {
@@ -158,6 +146,8 @@ margin-top: 0;
     width: 610px;
 
    padding-bottom: 20px;
+
+   /* background: rgba(148, 147, 145, 0.918); */
 }
 
 /* @media screen and (max-width: 600px) { 
