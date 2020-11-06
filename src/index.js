@@ -57,7 +57,6 @@ contactsTab.addEventListener('click', () => {
 
 menuTab.addEventListener('click', () => {
     menu();
-
     if (mainDishBool == false && dessertsBool == false && drinksBool == false) {
         mainDishes.classList.add('colorKeep');
         showMainDishes();
@@ -65,7 +64,6 @@ menuTab.addEventListener('click', () => {
 
     if (mainDishBool == true) {
          mainDishes.classList.add('colorKeep')
-        // menuTab.style.pointerEvents = 'none';
     } else if (dessertsBool == true) {
         desserts.classList.add('colorKeep')
     } else if (drinksBool == true) {
@@ -79,9 +77,7 @@ menuTab.addEventListener('click', () => {
 
     contactsTab.classList.remove('colorKeep');
     homeTab.classList.remove('colorKeep')
-    menuTab.classList.add('colorKeep');
-    //mainDishes.classList.add('colorKeep')
-    
+    menuTab.classList.add('colorKeep');    
 })
 
 desserts.addEventListener('click', () => {
