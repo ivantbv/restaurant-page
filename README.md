@@ -17,4 +17,4 @@ I practiced for the first time npm, webpack and ES6 modules.
 # Credits 🙏
 
 The logo of the restaurant was made using this website https://hatchful.shopify.com/ <br>
-All of the images for the restaurant were taken from 
+All of the images for the restaurant were taken from  https://pixabay.com/
