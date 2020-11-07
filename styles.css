@@ -153,13 +153,13 @@ h3 {
     font-size: 20px;
 }
 
-/* @media screen and (max-width: 600px) { 
-    .images {
-     width: 519px; 
-     height: 400px;
+@media screen and (max-width: 600px) { 
+    .glide__slide img {
+     width: 490px; 
+     height: 340px;
   
     }
-}  */
+} 
 
 .displayed {
     color: white;
