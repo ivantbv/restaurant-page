@@ -1,7 +1,7 @@
 import {homeTabContent} from  './index'
 
 const vikingDrinking = document.createElement('img')
-vikingDrinking.src = '/dist/images/logo_transparent.png'
+vikingDrinking.src = 'images/logo_transparent.png'
 const welcomeMsg = document.createElement('h5')
 const description = document.createElement('p');
 const description2 = document.createElement('p');
