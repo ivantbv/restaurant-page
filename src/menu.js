@@ -1,4 +1,4 @@
-import Glide from '@glidejs/glide'
+import Glide from '/node_modules/@glidejs/glide'
 new Glide('.images', {
     type: 'carousel',
     perView: 1,
