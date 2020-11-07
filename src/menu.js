@@ -49,23 +49,23 @@ subMenuDiv.classList.add('sub-navbar');
 
 function showDesserts() {
     dishDescription(fruitSalad, cheeseCake, pancakes)
-    thirdImage.src = '/dist/images/pancakes.jpg';
-    secondImage.src = '/dist/images/cake.jpg';
-    firstImage.src = '/dist/images/fruit-salad.jpg';   
+    thirdImage.src = 'images/pancakes.jpg';
+    secondImage.src = 'images/cake.jpg';
+    firstImage.src = 'images/fruit-salad.jpg';   
 }
 
 function showMainDishes() {
     dishDescription(pumpkin, tortilla, pasta)
-    firstImage.src = '/dist/images/pumpkin.jpg'
-    secondImage.src = '/dist/images/tortilla.jpg';
-    thirdImage.src = '/dist/images/pasta.jpg';
+    firstImage.src = 'images/pumpkin.jpg'
+    secondImage.src = 'images/tortilla.jpg';
+    thirdImage.src = 'images/pasta.jpg';
 }
 
 function showDrinks() {
     dishDescription(tea,hotChocolate, coffee)
-    firstImage.src = '/dist/images/tea.jpg'
-    secondImage.src = '/dist/images/hot-chocolate.jpg';
-    thirdImage.src = '/dist/images/coffee.jpg';
+    firstImage.src = 'images/tea.jpg'
+    secondImage.src = 'images/hot-chocolate.jpg';
+    thirdImage.src = 'images/coffee.jpg';
 }
 
 function menu() {
