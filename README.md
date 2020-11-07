@@ -7,7 +7,7 @@ This is a simple restaurant homepage. It dynamically renders most <br> of its co
 
 This is a single page website that uses tabbed browsing access to <br> show off the contents. 3 main tabs - Home, Menu and Contacts. <br> I made seperate files for each tab and exported them to index.js which <br> is responsible for the tabs switching logic. <br>
 <strong>Home</strong> tab loads on page load and displays a welcoming text and the restaurant's logo. <br>
-<strong>Menu</strong> tab opens 3 sub-tabs with "Main Dishes", "Desserts" and "Drinks" that are placed in a carousel <br> which displays images of the dishes and their names on top. <br> I used the library Glidejs for the carousel. <br>
+<strong>Menu</strong> tab opens 3 sub-tabs with "Main Dishes", "Desserts" and "Drinks" that are placed in a <br> carousel which displays images of the dishes and their names on top. <br> I used the library Glidejs for the carousel. <br>
 <strong>Contacts</strong> tab opens the "location" of the restaurant with <br> a google map. I used 'iframe' tag in the HTML to embed the map. <br>
 
 # Learning outcomes 🧑‍🎓
