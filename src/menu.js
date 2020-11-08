@@ -49,23 +49,17 @@ subMenuDiv.classList.add('sub-navbar');
 
 function showDesserts() {
     dishDescription(fruitSalad, cheeseCake, pancakes)
-    thirdImage.src = 'images/pancakes.jpg';
-    secondImage.src = 'images/cake.jpg';
-    firstImage.src = 'images/fruit-salad.jpg';   
+    getImgSrc('images/fruit-salad.jpg','images/cake.jpg','images/pancakes.jpg')  
 }
 
 function showMainDishes() {
     dishDescription(pumpkin, tortilla, pasta)
-    firstImage.src = 'images/pumpkin.jpg'
-    secondImage.src = 'images/tortilla.jpg';
-    thirdImage.src = 'images/pasta.jpg';
+    getImgSrc('images/pumpkin.jpg','images/tortilla.jpg','images/pasta.jpg')
 }
 
 function showDrinks() {
     dishDescription(tea,hotChocolate, coffee)
-    firstImage.src = 'images/tea.jpg'
-    secondImage.src = 'images/hot-chocolate.jpg';
-    thirdImage.src = 'images/coffee.jpg';
+    getImgSrc('images/tea.jpg','images/hot-chocolate.jpg','images/coffee.jpg')
 }
 
 function menu() {
@@ -86,12 +80,17 @@ function dishDescription(first,second,third) {
         glideSlides[3].appendChild(third);
 }
 
+const getImgSrc = (firstImgSrc, secondImgSrc, thirdImgSrc) => {
+    firstImage.src = firstImgSrc
+    secondImage.src = secondImgSrc
+    thirdImage.src = thirdImgSrc
+}
+
 glideSlides[3].appendChild(thirdImage);
 glideSlides[2].appendChild(secondImage);
 glideSlides[1].appendChild(firstImage);
 lastSlide.remove();
 
 export { menu }
-export { subMenuDiv, menuDiv }
-export { showDesserts, showMainDishes, showDrinks }
+export {subMenuDiv, menuDiv, showDesserts, showMainDishes, showDrinks}
 export {desserts, mainDishes, drinks, glideSlides}

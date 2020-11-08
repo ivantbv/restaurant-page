@@ -57,18 +57,7 @@ contactsTab.addEventListener('click', () => {
 
 menuTab.addEventListener('click', () => {
     menu();
-    if (mainDishBool == false && dessertsBool == false && drinksBool == false) {
-        mainDishes.classList.add('colorKeep');
-        showMainDishes();
-    }
-
-    if (mainDishBool == true) {
-         mainDishes.classList.add('colorKeep')
-    } else if (dessertsBool == true) {
-        desserts.classList.add('colorKeep')
-    } else if (drinksBool == true) {
-        drinks.classList.add('colorKeep')
-    }
+    highlightSelectedSubtabs();
 
     tabsContent.classList.remove('removed');
     subMenuDiv.classList.remove('removed');
@@ -107,5 +96,20 @@ drinks.addEventListener('click', () => {
     mainDishes.classList.remove('colorKeep');
     drinks.classList.add('colorKeep');
 })
+
+const highlightSelectedSubtabs = () => {
+    if (mainDishBool == false && dessertsBool == false && drinksBool == false) {
+        mainDishes.classList.add('colorKeep');
+        showMainDishes();
+    }
+
+    if (mainDishBool == true) {
+         mainDishes.classList.add('colorKeep')
+    } else if (dessertsBool == true) {
+        desserts.classList.add('colorKeep')
+    } else if (drinksBool == true) {
+        drinks.classList.add('colorKeep')
+    }
+}
 
 export { tabsContent, homeTabContent, contactsTabContent };
